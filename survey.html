@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Workflow and Automation Assessment Survey</title>
+</head>
+<body>
+  <h2>Employee Workflow and Automation Assessment Survey</h2>
+  <form action="mailto:tkline@allflexinc.com" method="post" enctype="text/plain">
+    <ol>
+      <li>
+        <label>Please specify your role within the company</label><br>
+        <input type="radio" id="role_admin" name="role" value="Administrative/Support Staff" required>
+        <label for="role_admin">Administrative/HR</label><br>
+        <input type="radio" id="role_sales" name="role" value="Sales/Marketing">
+        <label for="role_sales">Sales/Marketing</label><br>
+        <input type="radio" id="role_customer" name="role" value="Customer Service">
+        <label for="role_customer">Customer Service</label><br>
+        <input type="radio" id="role_it" name="role" value="IT/Technical">
+        <label for="role_it">IT</label><br>
+        <input type="radio" id="role_operations" name="role" value="Operations/Production">
+        <label for="role_operations">Operations/Production</label><br>
+        <input type="radio" id="role_finance" name="role" value="Finance/Accounting">
+        <label for="role_finance">Finance/Accounting</label><br>
+        <input type="radio" id="role_manager" name="role" value="Other">
+        <label for="role_other">Production Manager</label><br>
+      </li><br>
+
+      <li>
+        <label>What software tools or applications do you use regularly to perform your job? (Select all that apply)</label><br>
+        <input type="checkbox" id="task1" name="repetitiveTasks" value="Task 1">
+        <label for="task1">Excel</label><br>
+        <input type="checkbox" id="task2" name="repetitiveTasks" value="Task 2">
+        <label for="task2">Word</label><br>
+        <input type="checkbox" id="task3" name="repetitiveTasks" value="Task 3">
+        <label for="task3">Adobe Acrobat Pro</label><br>
+        <input type="checkbox" id="task4" name="repetitiveTasks" value="Task 4">
+        <label for="task4">PowerPoint</label><br>
+		<input type="checkbox" id="task5" name="repetitiveTasks" value="Task 5">
+        <label for="task5">SharePoint</label><br>
+        <input type="checkbox" id="task_other" name="repetitiveTasks" value="Other">
+        <label for="task_other">Other (please specify)</label><br>
+        <textarea id="task_other_text" name="task_other_text" placeholder="Please specify" style="display: none;"></textarea><br><br>
+      </li><br>
+
+      <li>
+        <label>What platform do you prefer to communicate on?</label><br>
+        <input type="radio" id="tools_email" name="tools" value="Email" required>
+        <label for="tools_email">Outlook Email</label><br>
+        <input type="radio" id="tools_teams" name="tools" value="Microsoft Teams">
+		<label for="tools_teams">Microsoft Teams</label><br>
+        <input type="radio" id="tools_nopref" name="tools" value="No Preference">
+		<label for="tools_nopref">No Preference</label><br>
+        
+        <label for="tools_other">Other (please specify)</label><br>
+        <input type="text" id="tools_other_text" name="tools_other_text" placeholder="Please specify" style="display: none;"><br><br>
+      </li><br>
+
+      <li>
+        <label>Are there any tasks that you find repetitive or monotonous in your role? If so, please describe them.</label><br>
+        <textarea id="communication" name="communication" rows="4" required></textarea><br><br>
+      </li><br>
+
+      <li>
+        <label>In your opinion, are there any tasks or processes within your role that you believe could be automated to improve efficiency? If yes, please provide details.</label><br>
+        <textarea id="automationPotential" name="automationPotential" rows="4"></textarea><br><br>
+      </li><br>
+
+      <li>
+        <label>What are the biggest challenges or pain points you encounter in your role? Are there specific tasks or processes that contribute to these challenges?</label><br>
+        <textarea id="challenges" name="challenges" rows="4"></textarea><br><br>
+      </li><br>
+
+      <li>
+        <label>Would you like to provide any additional information or feedback regarding your role and responsibilities?</label><br>
+        <textarea id="comments" name="comments" rows="4"></textarea><br><br>
+      </li><br>
+    </ol>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
